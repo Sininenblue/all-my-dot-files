@@ -1,0 +1,21 @@
+#!/bin/fish
+
+function notify
+  set current_volume $(pactl get-sink-volume $(pactl get-default-sink) | awk '{print $5}' | cut -d "%" -f 1)
+  notify-send -u low -h "int:value:$current_volume" -h string:hlcolor:#89b4fa "Volume"
+end
+
+switch $argv[1]
+  case up
+    pactl set-sink-volume $(pactl get-default-sink) +5% 
+    notify
+  case down
+    pactl set-sink-volume $(pactl get-default-sink) -5% 
+    notify
+  case mute
+    pactl set-sink-mute $(pactl get-default-sink) toggle
+  case '*'
+    echo "not a valid command"
+end
+
+

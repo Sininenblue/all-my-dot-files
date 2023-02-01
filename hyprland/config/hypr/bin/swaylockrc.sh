@@ -1,0 +1,29 @@
+#!/bin/fish
+swaylock \
+	--screenshots \
+	--clock \
+	--indicator \
+	--indicator-radius 100 \
+	--indicator-thickness 7 \
+	--effect-blur 7x5 \
+	--effect-vignette 0.5:0.5 \
+	--text-color cdd6f4 \
+	--text-clear-color a6e3a1 \
+	--text-ver-color 89b4fa \
+	--text-wrong-color f38ba8 \
+	--ring-color 1e1e2e \
+	--ring-clear-color a6e3a1 \
+	--ring-ver-color 89b4fa \
+	--ring-wrong-color f38ba8 \
+	--key-hl-color 89b4fa \
+	--line-color 00000000 \
+	--line-clear-color 00000000 \
+	--line-ver-color 00000000 \
+	--line-wrong-color 00000000 \
+	--inside-color 18182588 \
+	--inside-clear-color 18182588 \
+	--inside-ver-color 18182588 \
+	--inside-wrong-color 18182588 \
+	--separator-color 00000000 \
+	--grace 2 \
+	--fade-in 0.2

@@ -1,0 +1,18 @@
+* {
+	background-image: none;
+}
+window {
+	background-color: rgba(12, 12, 12, 0.9);
+}
+button {
+	font-family: "Font Awesome 6 Free Solid";
+	font-size: 64px;
+	padding-bottom: 28px;
+  color: #cdd6f4;
+  background-color: #1e1e2e;
+  margin: 15px;
+}
+
+button:focus, button:active, button:hover {
+  background-color: #313244;
+}

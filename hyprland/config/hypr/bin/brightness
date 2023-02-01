@@ -1,0 +1,13 @@
+#!/bin/fish
+
+switch $argv[1]
+  case up
+    light -T 1.2
+  case down
+    light -T 0.8
+  case '*'
+    echo "not a valid command"
+end
+
+set current_brightness $(light -G)
+notify-send -u low -h int:value:$current_brightness -h string:hlcolor:#89b4fa "Brightness"

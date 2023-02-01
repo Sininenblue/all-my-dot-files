@@ -1,0 +1,24 @@
+#!/bin/fish
+
+# add task to file
+# complete current task
+
+switch $argv[1]
+  case add
+    echo $argv[2] >> ~/todo.txt 
+    echo "Added '$argv[2]' to the list"
+  # case add-urgent
+  case done
+    set task $(head -n 1 ~/todo.txt)
+    tail -n +2 ~/todo.txt > ~/todo.tmp && mv ~/todo.tmp ~/todo.txt 
+    echo "finished '[$task]'"
+  case later
+    set task $(head -n 1 ~/todo.txt)
+    tail -n +2 ~/todo.txt > ~/todo.tmp && mv ~/todo.tmp ~/todo.txt
+    echo $task >> ~/todo.txt
+    echo "put '[$task]' at the end of list"
+  case list
+    cat ~/todo.txt
+  case '*'
+    echo "not a valid command"
+end

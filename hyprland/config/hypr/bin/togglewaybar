@@ -1,0 +1,11 @@
+#!/bin/fish
+
+set state $(pidof waybar)
+
+if test -n "$state"
+  echo "waybar on, will turn off"
+  killall -SIGUSR1 waybar
+else
+  echo "waybar off, will turn on"
+  waybar &
+end

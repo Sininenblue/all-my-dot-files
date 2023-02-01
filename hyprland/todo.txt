@@ -1,0 +1,9 @@
+finish rust book chapter
+manage dunst
+learn more about vim motions
+manage lf config files, and also maybe uberzug
+get apps
+get feh set up
+get cmus up and running
+make grim slurp screeshot script
+make unified bin folder
