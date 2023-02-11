@@ -6,4 +6,6 @@ if status is-interactive
 	set -gx EDITOR nvim
 
 	alias lf "lfrun"
+
+	bind \co -M insert "lfcd"
 end

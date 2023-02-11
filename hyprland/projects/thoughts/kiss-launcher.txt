@@ -1,0 +1,27 @@
+The kiss launcher is a free and open source home launcher for andriod
+
+it's a minimal launcher which revolves around it's search and history feature, which forces you to be descriptive with what you want.
+
+You spend less time just scrolling through your phone trying to find something interesting (though that can still happen) and more time actively using your phone to do something you need it to do.
+
+It's favourites feature make sure that the important things are always at your fingertips like your traditional launcher, it's history molds your apps to you, and it's search makes sure you have the power to affect your device however you want
+
+I cannot understate the power of search
+
+- apps
+- app subservices
+- search
+- math equations
+- making calls
+
+the list goes on
+
+Now that I'm finished with the good, let's go to the bad
+
+widgets and space
+
+widgets only work in minimal mode
+
+the ever changing history makes forming strong physical memory impossible
+
+both are fixable, but not seamlessly
